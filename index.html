@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color:white;
+        }
+       .parent{
+        border:4px solid;
+        height:606px;
+        width:606px;
+        margin:auto;
+        display:flex;
+        flex-wrap: wrap;
+        box-shadow: 10px 10px 10px 10px rgb(211, 114, 172);
+        margin-top: -100px;
+        
+       }
+       .box1{
+       height:200px;
+       width:200px;
+       border:1px solid;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+       font-size:80px;
+       font-style: italic;
+       font-weight: bolder;
+       }
+       h1{
+        margin-left: 600px;
+        font-family:cursive;
+        font-weight: bolder;
+        text-decoration: underline;
+       }
+
+       h3{
+        font-size: 50px;
+        font-family:cursive;
+        margin-left: 80px;
+       }
+       .button{
+           width:200px;
+           height:50px;
+           font-size:large;
+           border-radius: 20px;
+           float: right;
+           margin-top: -50px;
+           margin-right:80px;
+       }
+       .ani{
+        width:700px;
+        height:700px;
+        border:2px solid black;
+        animation-name: win;
+        margin-top: -1500px;
+        margin-left: 400px;
+        animation-duration: 9s;
+        animation-iteration-count:1;
+        background-image: url("https://t4.ftcdn.net/jpg/12/95/44/33/360_F_1295443364_koENCPGEK8SF3Dx7Wxo6YiNFYlylENZF.jpg");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 90px;
+        color:white;
+       }
+       @keyframes win{
+           0%{
+            transform:translateY(0px);
+           }
+           70%{
+            transform:translateY(850px);
+           }
+           100%{
+            transform:translateY(850px);
+           }
+       }
+       
+    </style>
+</head>
+<body>
+    <h1>Tic-Tac-Toe Game</h1>
+    <button class="button">Click here for Dark Mode</button>
+    <h3 class="player">chance of X:- </h3>
+    <div class="parent">
+        <div class="box1" id="0"></div>
+        <div class="box1" id="1"></div>
+        <div class="box1" id="2"></div>
+        <div class="box1" id="3"></div>
+        <div class="box1" id="4"></div>
+        <div class="box1" id="5"></div>
+        <div class="box1" id="6"></div>
+        <div class="box1" id="7"></div>
+        <div class="box1" id="8"></div>
+    </div>
+    <div class="winner"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
